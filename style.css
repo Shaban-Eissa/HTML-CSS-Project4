@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-links li {
+  margin: 0 30px;
+}
+
+.navbar .nav-links li a {
+  color: white;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./img/header-bg.png");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-content {
+  margin-bottom: 150px;
+  color: white;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: #fc036b;
+  margin: 10px auto;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 8px 15px;
+  background: #fc036b;
+  border-radius: 30px;
+  color: white;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: rgb(73, 73, 126);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.events .row {
+  margin-top: 50px;
+}
+
+.events .row .col {
+    margin-right: 25px;
+}
+
+
+
+h4 {
+  font-size: 3vmin;
+  color: #484872;
+  margin: 20px auto;
+}
+
+p {
+  color: #7c7c7c;
+  padding: 0 40px;
+}
+
+.events .btn {
+  margin-top: 30px;
+}
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/bg2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+    margin: 50px;
+}
+
+.explore-content .line {
+    margin-bottom: 50px;
+
+}
+.explore-content p {
+    color:rgb(221,221,221);
+}
+
+.explore-content .btn {
+    margin-top: 40px;
+}
+
+.content-col {
+    width: 40%;
+}
+
+.content-col  h1 {
+    font-size: 7vmin;
+    color: #484872;
+}
+.content-col .line {
+    margin-left: -1px;
+}
+
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+}
+
+.content-col .btn {
+    margin-left: -100px;
+}
+
+
+.image-col {
+    width: 60%;
+}
+ 
+.footer {
+    width: 100%;
+    min-height: 200px;
+    padding: 20px 80px;
+    margin: 0;
+    background : #484872 ;
+    text-align: center;
+}
+
+.footer p {
+    line-height: 22px;
+    color: white;
+    margin: 20px auto;
+}
+ 
+.tours .image-gallary
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallary img {
+    max-width: 300px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: #484872;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu {
+    margin-top: 0px;
+  }
+
+  .navbar .nav-links li {
+    margin: 15px auto;
+    font-weight: bold;
+  }
+  .row {
+      flex-direction: column;
+  }
+  .row .col{
+      margin: 20px auto;
+
+  }
+  .col img {
+      max-width: 90%;
+  }
+
+  .events .row .col {
+      margin: 40px auto;
+  }
+
+  .explore-content {
+       width: 100%;
+  }
+
+  .tours .col {
+      width: 100%;
+
+  }
+  .tours .btn {
+      margin: 5px auto;
+  }
+  .image-gallary {
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  .image-gallary img {
+      width: 90%;
+  }
+
+  .footer {
+      padding: auto 10px;
+      
+  }
+
+
+   
+}
